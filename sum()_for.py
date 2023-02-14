@@ -1,5 +1,9 @@
 def sum_numbers(*numbers):
-    return sum(number for number in numbers if number > 0)
+    try:
+        result = sum(number for number in numbers if number > 0)
+    except TypeError:
+        result = 0
+    return result
 
 
 if __name__ == "__main__":
