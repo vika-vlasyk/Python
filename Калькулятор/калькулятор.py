@@ -1,52 +1,42 @@
 def add(n1, n2):
-    """Compute and return the sum of two numbers.
-
-    Usage examples:
-    >>> add(4.0, 2.0)
-    6.0
-    >>> add(4, 2)
-    6.0
-    """
+    """Compute and return the sum of two numbers."""
     return n1 + n2
 
 
 def subtract(n1, n2):
-    """Compute and return the difference of two numbers.
-
-    Usage examples:
-    >>> subtract (4.0, 2.0)
-    2.0
-    >>> subtract(4, 2)
-    2.0
-    """
+    """Compute and return the difference of two numbers."""
     return n1 - n2
 
 
 def multiply(n1, n2):
-    """Compute and return the multiply of two numbers.
-
-    Usage examples:
-    >>> multiply(4.0, 2.0)
-    8.0
-    >>> multiply(4, 2)
-    8.0
-    """
+    """Compute and return the multiply of two numbers."""
     return n1 * n2
 
 
 def divide(n1, n2):
-    """Compute and return the divide of two numbers.
+    """Compute and return the divide of two numbers."""
 
-    Usage examples:
-    >>> divide(4.0, 2.0)
-    2.0
-    >>> divide(4, 2)
-    2.0
-    """
     return n1 / n2
 
 
-operations = {"+": add, "-": subtract, "*": multiply, "/": divide}
+def remainder(n1, n2):
+    return n1 % n2
+
+
+def divide_int(n1, n2):
+    """Compute and return the divide of two numbers int."""
+    result = int(n1) / int(n2)
+    return result
+
+
+operations = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    ":": divide,
+    "%": remainder,
+    "/": divide_int,
+}
 
 
 def calculator():
